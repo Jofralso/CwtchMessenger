@@ -1,0 +1,23 @@
+# Build output
+/target/
+/dist/
+/*.jar
+/*.zip
+/*.tar.gz
+
+# Maven
+/dependency-reduced-pom.xml
+
+# Tor runtime data
+/tor_data_*/
+
+# OS/editor
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log

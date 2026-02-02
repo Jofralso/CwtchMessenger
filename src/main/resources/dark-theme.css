@@ -1,0 +1,324 @@
+/* Cwtch Messenger - Dark Theme (Ricochet-style) */
+
+/* === Base Colors === */
+.root {
+    -fx-base: #1a1d23;
+    -fx-background: #1a1d23;
+    -fx-background-color: #1a1d23;
+    -fx-text-fill: #e0e0e0;
+    -fx-accent: #7c3aed;
+}
+
+/* === Typography === */
+.label {
+    -fx-text-fill: #e0e0e0;
+}
+
+.app-title {
+    -fx-text-fill: #9f7aea;
+    -fx-font-weight: bold;
+}
+
+/* === Form Controls === */
+.text-field, .text-area {
+    -fx-background-color: #2d3139;
+    -fx-text-fill: #e0e0e0;
+    -fx-border-color: #3d4250;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-prompt-text-fill: #6b7280;
+}
+
+.text-field:focused, .text-area:focused {
+    -fx-border-color: #7c3aed;
+    -fx-background-color: #353b47;
+}
+
+/* === Buttons === */
+.button {
+    -fx-background-color: #374151;
+    -fx-text-fill: #e0e0e0;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-border-width: 1;
+    -fx-border-color: #4b5563;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #4b5563;
+    -fx-border-color: #6b7280;
+}
+
+.button:pressed {
+    -fx-background-color: #6b7280;
+}
+
+.connect-button, .add-contact-button {
+    -fx-background-color: #7c3aed;
+    -fx-text-fill: white;
+    -fx-border-color: #6d28d9;
+}
+
+.connect-button:hover, .add-contact-button:hover {
+    -fx-background-color: #8b5cf6;
+    -fx-border-color: #7c3aed;
+}
+
+.icon-button {
+    -fx-min-width: 32;
+    -fx-min-height: 32;
+    -fx-padding: 4;
+}
+
+/* === Connection Panel === */
+.connection-panel {
+    -fx-background-color: #21252b;
+    -fx-border-color: #3d4250;
+    -fx-border-width: 0 0 1 0;
+}
+
+.status-label {
+    -fx-text-fill: #9ca3af;
+    -fx-font-size: 12px;
+}
+
+.onion-address {
+    -fx-text-fill: #a78bfa;
+    -fx-font-family: monospace;
+}
+
+.address-title {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 11px;
+}
+
+/* === Contact List === */
+.contact-list {
+    -fx-background-color: #21252b;
+    -fx-border-color: #3d4250;
+    -fx-border-width: 0 1 0 0;
+}
+
+.contact-list-header {
+    -fx-text-fill: #9ca3af;
+    -fx-padding: 0 0 10 0;
+}
+
+.contact-listview {
+    -fx-background-color: transparent;
+}
+
+.contact-listview .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 8 10;
+    -fx-border-color: transparent;
+}
+
+.contact-listview .list-cell:selected {
+    -fx-background-color: #374151;
+    -fx-border-color: #7c3aed;
+    -fx-border-width: 0 0 0 3;
+}
+
+.contact-listview .list-cell:hover {
+    -fx-background-color: #2d3139;
+}
+
+.contact-name {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-weight: bold;
+}
+
+.contact-address {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 10px;
+}
+
+/* === Chat Area === */
+.chat-area {
+    -fx-background-color: #1a1d23;
+    -fx-border-color: transparent;
+}
+
+.chat-area > .viewport {
+    -fx-background-color: #1a1d23;
+}
+
+.chat-messages {
+    -fx-background-color: #1a1d23;
+}
+
+.chat-message {
+    -fx-padding: 8 12;
+    -fx-background-radius: 8;
+    -fx-max-width: 500;
+}
+
+.system-message {
+    -fx-text-fill: #6b7280;
+    -fx-font-style: italic;
+    -fx-background-color: transparent;
+}
+
+.own-message {
+    -fx-background-color: #7c3aed;
+    -fx-text-fill: white;
+}
+
+.peer-message {
+    -fx-background-color: #374151;
+    -fx-text-fill: #e0e0e0;
+}
+
+/* === Message Input === */
+.message-input {
+    -fx-background-color: #21252b;
+    -fx-padding: 10;
+    -fx-border-color: #3d4250;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* === Scroll Bars === */
+.scroll-bar {
+    -fx-background-color: #21252b;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #4b5563;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #6b7280;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-shape: "";
+}
+
+/* === Context Menu === */
+.context-menu {
+    -fx-background-color: #2d3139;
+    -fx-border-color: #3d4250;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+}
+
+.menu-item:focused, .menu-item:hover {
+    -fx-background-color: #374151;
+}
+
+.menu-item .label {
+    -fx-text-fill: #e0e0e0;
+}
+
+/* === Dialogs === */
+.dialog-pane {
+    -fx-background-color: #21252b;
+}
+
+.dialog-pane > .content {
+    -fx-background-color: #21252b;
+}
+
+.dialog-pane > .button-bar > .container {
+    -fx-background-color: #21252b;
+}
+
+/* === Separator === */
+.separator {
+    -fx-background-color: #3d4250;
+}
+
+.separator .line {
+    -fx-border-color: #3d4250;
+}
+
+/* === Terminal Mode Styles === */
+.terminal-scroll {
+    -fx-background-color: #0a0a0a;
+    -fx-background: #0a0a0a;
+}
+
+.terminal-scroll > .viewport {
+    -fx-background-color: #0a0a0a;
+}
+
+.terminal-scroll .scroll-bar {
+    -fx-background-color: #0a0a0a;
+}
+
+.terminal-scroll .scroll-bar .thumb {
+    -fx-background-color: #00ff41;
+    -fx-background-radius: 0;
+    -fx-opacity: 0.3;
+}
+
+.terminal-scroll .scroll-bar .thumb:hover {
+    -fx-opacity: 0.5;
+}
+
+.terminal-scroll .scroll-bar .increment-button,
+.terminal-scroll .scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}
+
+/* Terminal Text Field */
+.terminal-input {
+    -fx-background-color: transparent;
+    -fx-text-fill: #00ff41;
+    -fx-font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+    -fx-font-size: 14px;
+    -fx-border-width: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Matrix/Hacker aesthetics */
+.hacker-glow {
+    -fx-effect: dropshadow(gaussian, #00ff41, 5, 0.5, 0, 0);
+}
+
+.hacker-text {
+    -fx-text-fill: #00ff41;
+    -fx-font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+}
+
+.panic-mode {
+    -fx-background-color: #1a0000;
+    -fx-text-fill: #ff0000;
+}
+
+.ghost-mode {
+    -fx-opacity: 0.7;
+}
+
+/* Privacy indicator badges */
+.privacy-badge {
+    -fx-background-color: #00ff41;
+    -fx-text-fill: #000000;
+    -fx-padding: 2 6;
+    -fx-background-radius: 3;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.privacy-badge-warning {
+    -fx-background-color: #ffaa00;
+}
+
+.privacy-badge-danger {
+    -fx-background-color: #ff3333;
+}
